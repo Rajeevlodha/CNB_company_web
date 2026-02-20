@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+   
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+main{
+   
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/034/633/633/small_2x/ai-generated-nature-plant-green-bouquet-sunlit-ai-generated-photo.jpg");
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat;
+     width: 100%;
+    max-width: 100%;
+    
+   padding-top: 90px;
+
+}
+
+/* ========== HEADER ========== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+    width: 100%;
+    color: #fff;
+     padding:10px 5px;
+      backdrop-filter: blur(10px);
+   background: rgba(0,0,0,0.4);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size:20px;
+}
+
+.btn {
+    background: #2ecc71;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: white;
+}
+
+.btn-outline {
+    border: 2px solid #2ecc71;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+
+
+/* ========== ABOUT SECTION ========== */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    align-items: center;
+}
+
+.about-image img {
+    /* width: 500px;     
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 80px; */
+
+
+     width: 100%;
+    max-width: 500px;
+    height: auto;
+     border-radius: 100px;
+}
+
+.about-text {
+    flex: 1;
+   
+}
+
+.about-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ff0c0c;
+     text-align: center;
+                        /* margin-left: 20%; */
+    
+}
+
+.about-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+                       /* margin-left: 11%; */
+     font-weight: bolder;
+     text-align: center;
+     
+    
+}
+.about-text h6{
+    font-size: 17px;
+     font-weight: bolder;
+     text-align: center;
+      line-height: 2.5;
+       word-spacing: 8px;
+   
+}
+/*  */
+
+
+/* ========== PRODUCTS SECTION ========== */
+.products {
+    padding: 60px 40px;
+    background: #9fada2c2;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.products h2 {
+    font-size: 40px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+/* wrapper */
+.product-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* scroll area */
+.product-container {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+
+/* hide scrollbar */
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* card */
+.product-card {
+    min-width: 220px;
+    background: #1e7d22;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+    height: 300px;
+    width: 200px;
+}
+
+.product-card:hover{
+   transform: translateY(-10px);
+   transition: 0.3s;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.product-card img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-position: center;
+}
+
+.product-card h3 {
+    /* margin: 5px 0 10px; */
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+  
+    display: flex;
+    justify-content: center
+   
+}
+
+.product-card p {
+    font-size: 10px;
+    line-height: 1.5;
+     justify-content: center;
+      display: flex;
+}
+
+/* arrows */
+.scroll-btn {
+    background: #1e7d22;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.btn:hover{
+   background:#27ae60;
+   transform: scale(1.1);
+   transition: 0.3s;
+}
+
+.scroll-btn.left {
+    margin-right: 10px;
+}
+
+.scroll-btn.right {
+    margin-left: 10px;
+}
+
+
+
+
+/* ========== HIGHLIGHT ========== */
+.highlight {
+    background: #f4d03f;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 10px;
+    text-align: center;
+     flex-wrap: wrap;
+}
+
+.box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 20px;
+}
+
+
+/* ===== FINAL MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    /* header overlap fix */
+    main {
+        padding-top: 140px;
+    }
+
+    /* HEADER */
+    .header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    /* ABOUT */
+    .about {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    /* PRODUCTS */
+    .products {
+        padding: 40px 15px;
+    }
+
+    .products h2 {
+        font-size: 26px;
+    }
+
+    .product-card {
+        min-width: 180px;
+    }
+
+    /* HIGHLIGHT */
+    .highlight {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
